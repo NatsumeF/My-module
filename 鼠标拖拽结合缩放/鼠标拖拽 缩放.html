@@ -17,8 +17,11 @@
 		width: 100px;
 		border: 1px solid red;
 		position: absolute;
+		left:50%;
+		top: 50%;
 		color: #fff;
 		padding-top:100px; 
+		transform: translate(-50%,-50%);
 	}
 	div{
 		color:#000;
@@ -44,6 +47,7 @@
 	</style>
 </head>
 <body>
+
 	<div id="box" onresize="alert(1)">
 		<div class="first">
 			<span>我是一个固定高度100px的div</span>
@@ -56,7 +60,6 @@
 		</div>
 		<div id="drag" >缩放</div>
 	</div>
-
 	<script src="..//util.js"></script>
 	<script>
 	var box=document.getElementById("box");
